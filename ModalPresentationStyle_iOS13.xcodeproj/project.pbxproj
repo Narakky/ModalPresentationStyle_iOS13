@@ -56,15 +56,47 @@
 		046B69AC22FBBA7F004D1231 /* ModalPresentationStyle_iOS13 */ = {
 			isa = PBXGroup;
 			children = (
-				046B69AD22FBBA7F004D1231 /* AppDelegate.swift */,
+				046B69C322FBBCB8004D1231 /* Application */,
+				046B69C122FBBC9D004D1231 /* Presentation */,
+				046B69C422FBBCCC004D1231 /* Resources */,
 				046B69AF22FBBA7F004D1231 /* SceneDelegate.swift */,
-				046B69B122FBBA7F004D1231 /* ViewController.swift */,
-				046B69B322FBBA7F004D1231 /* Main.storyboard */,
-				046B69B622FBBA81004D1231 /* Assets.xcassets */,
-				046B69B822FBBA81004D1231 /* LaunchScreen.storyboard */,
-				046B69BB22FBBA81004D1231 /* Info.plist */,
 			);
 			path = ModalPresentationStyle_iOS13;
+			sourceTree = "<group>";
+		};
+		046B69C122FBBC9D004D1231 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				046B69C222FBBCA5004D1231 /* Controllers */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		046B69C222FBBCA5004D1231 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				046B69B322FBBA7F004D1231 /* Main.storyboard */,
+				046B69B122FBBA7F004D1231 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		046B69C322FBBCB8004D1231 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				046B69AD22FBBA7F004D1231 /* AppDelegate.swift */,
+				046B69BB22FBBA81004D1231 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		046B69C422FBBCCC004D1231 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				046B69B622FBBA81004D1231 /* Assets.xcassets */,
+				046B69B822FBBA81004D1231 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
