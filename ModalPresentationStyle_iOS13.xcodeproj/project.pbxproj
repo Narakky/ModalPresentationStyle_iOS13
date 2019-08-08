@@ -13,6 +13,8 @@
 		046B69B522FBBA7F004D1231 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046B69B322FBBA7F004D1231 /* Main.storyboard */; };
 		046B69B722FBBA81004D1231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046B69B622FBBA81004D1231 /* Assets.xcassets */; };
 		046B69BA22FBBA81004D1231 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046B69B822FBBA81004D1231 /* LaunchScreen.storyboard */; };
+		04EC64D522FBCACB004ED071 /* CommonSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC64D422FBCACB004ED071 /* CommonSecondViewController.swift */; };
+		04EC64D722FBCAF3004ED071 /* CommonSecondViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EC64D622FBCAF3004ED071 /* CommonSecondViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		046B69B622FBBA81004D1231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		046B69B922FBBA81004D1231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		046B69BB22FBBA81004D1231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04EC64D422FBCACB004ED071 /* CommonSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSecondViewController.swift; sourceTree = "<group>"; };
+		04EC64D622FBCAF3004ED071 /* CommonSecondViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CommonSecondViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 			children = (
 				046B69B322FBBA7F004D1231 /* Main.storyboard */,
 				046B69B122FBBA7F004D1231 /* ViewController.swift */,
+				04EC64D622FBCAF3004ED071 /* CommonSecondViewController.storyboard */,
+				04EC64D422FBCACB004ED071 /* CommonSecondViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -157,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04EC64D722FBCAF3004ED071 /* CommonSecondViewController.storyboard in Resources */,
 				046B69BA22FBBA81004D1231 /* LaunchScreen.storyboard in Resources */,
 				046B69B722FBBA81004D1231 /* Assets.xcassets in Resources */,
 				046B69B522FBBA7F004D1231 /* Main.storyboard in Resources */,
@@ -172,6 +179,7 @@
 			files = (
 				046B69B222FBBA7F004D1231 /* ViewController.swift in Sources */,
 				046B69AE22FBBA7F004D1231 /* AppDelegate.swift in Sources */,
+				04EC64D522FBCACB004ED071 /* CommonSecondViewController.swift in Sources */,
 				046B69B022FBBA7F004D1231 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,7 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ModalPresentationStyle_iOS13/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ModalPresentationStyle_iOS13/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +342,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ModalPresentationStyle_iOS13/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ModalPresentationStyle_iOS13/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
