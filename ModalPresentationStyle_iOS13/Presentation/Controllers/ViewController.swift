@@ -15,12 +15,14 @@ class ViewController: UIViewController {
     private enum TableData: CaseIterable {
         case common
         case hasNavigation
+        case hasSlider
         case hasGesture
 
         var title: String {
             switch self {
             case .common: return "普通"
             case .hasNavigation: return "ナビゲーション有り"
+            case .hasSlider: return "スライダー有り"
             case .hasGesture: return "ジェスチャ有り"
             }
         }
@@ -29,6 +31,7 @@ class ViewController: UIViewController {
             switch self {
             case .common: return "何の変哲もない普通の画面に遷移します"
             case .hasNavigation: return "ナビゲーションバーが存在する画面に遷移します"
+            case .hasSlider: return "スライダーバーが存在する画面に遷移します"
             case .hasGesture: return "ジェスチャが存在する画面に遷移します"
             }
         }
@@ -94,8 +97,12 @@ extension ViewController: UITableViewDelegate {
             if let secondViewController = UIStoryboard(name: "HasNavigationSecondViewController", bundle: nil).instantiateInitialViewController() {
                 present(secondViewController, animated: true, completion: nil)
             }
-        default:
+        case .hasGesture:
             break
+        case .hasSlider:
+            if let secondviewController = UIStoryboard(name: "HasSliderSecondViewController", bundle: nil).instantiateInitialViewController() {
+                present(secondviewController, animated: true, completion: nil)
+            }
         }
     }
 }

@@ -36,15 +36,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avo-83-Q0g">
+                                <rect key="frame" x="141" y="832" width="132" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button in Safe Area">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2K1-3F-KTP">
+                                <rect key="frame" x="204" y="866" width="210" height="30"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button in Bottom Layout Guide">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="avo-83-Q0g" firstAttribute="centerX" secondItem="YVX-1N-SEA" secondAttribute="centerX" id="4wD-wX-5MS"/>
+                            <constraint firstAttribute="bottom" secondItem="2K1-3F-KTP" secondAttribute="bottom" id="AC6-cB-KcQ"/>
                             <constraint firstItem="0Jv-KJ-hsj" firstAttribute="top" secondItem="EPJ-tn-N6R" secondAttribute="bottom" constant="30" id="LhL-7i-8qW"/>
+                            <constraint firstItem="avo-83-Q0g" firstAttribute="bottom" secondItem="gcX-ME-bPY" secondAttribute="bottom" id="P6T-od-Brf"/>
                             <constraint firstItem="gcX-ME-bPY" firstAttribute="trailing" secondItem="OlX-rr-5r9" secondAttribute="trailing" constant="20" id="PmT-0N-3UR"/>
                             <constraint firstItem="OlX-rr-5r9" firstAttribute="leading" secondItem="gcX-ME-bPY" secondAttribute="leading" constant="20" id="Qnw-4q-7cE"/>
                             <constraint firstItem="0Jv-KJ-hsj" firstAttribute="leading" secondItem="gcX-ME-bPY" secondAttribute="leading" constant="20" id="SCx-Cr-AzR"/>
                             <constraint firstItem="EPJ-tn-N6R" firstAttribute="leading" secondItem="gcX-ME-bPY" secondAttribute="leading" constant="20" id="V0Q-MR-LaG"/>
                             <constraint firstItem="gcX-ME-bPY" firstAttribute="trailing" secondItem="0Jv-KJ-hsj" secondAttribute="trailing" constant="20" id="YFS-lS-awi"/>
+                            <constraint firstAttribute="trailing" secondItem="2K1-3F-KTP" secondAttribute="trailing" id="eEZ-V1-0Fh"/>
                             <constraint firstItem="EPJ-tn-N6R" firstAttribute="top" secondItem="gcX-ME-bPY" secondAttribute="top" constant="60" id="uvf-X2-qZo"/>
                             <constraint firstItem="gcX-ME-bPY" firstAttribute="trailing" secondItem="EPJ-tn-N6R" secondAttribute="trailing" constant="20" id="w6K-ab-LkT"/>
                             <constraint firstItem="OlX-rr-5r9" firstAttribute="top" secondItem="0Jv-KJ-hsj" secondAttribute="bottom" constant="20" id="wjt-LE-0eR"/>
