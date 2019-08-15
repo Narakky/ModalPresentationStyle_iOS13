@@ -35,6 +35,15 @@ class ViewController: UIViewController {
             case .hasGesture: return "ジェスチャが存在する画面に遷移します"
             }
         }
+
+        var viewController: UIViewController? {
+            switch self {
+            case .common: return UIStoryboard(name: "CommonSecondViewController", bundle: nil).instantiateInitialViewController()
+            case .hasNavigation: return UIStoryboard(name: "HasNavigationSecondViewController", bundle: nil).instantiateInitialViewController()
+            case .hasSlider: return UIStoryboard(name: "HasSliderSecondViewController", bundle: nil).instantiateInitialViewController()
+            case .hasGesture: return nil
+            }
+        }
     }
 
     // MARK: - Outlets
@@ -90,19 +99,19 @@ extension ViewController: UITableViewDelegate {
 
         switch data {
         case .common:
-            if let secondViewController = UIStoryboard(name: "CommonSecondViewController", bundle: nil).instantiateInitialViewController() {
+            if let secondViewController = data.viewController {
                 present(secondViewController, animated: true, completion: nil)
             }
         case .hasNavigation:
-            if let secondViewController = UIStoryboard(name: "HasNavigationSecondViewController", bundle: nil).instantiateInitialViewController() {
+            if let secondViewController = data.viewController {
                 present(secondViewController, animated: true, completion: nil)
+            }
+        case .hasSlider:
+            if let secondviewController = data.viewController {
+                present(secondviewController, animated: true, completion: nil)
             }
         case .hasGesture:
             break
-        case .hasSlider:
-            if let secondviewController = UIStoryboard(name: "HasSliderSecondViewController", bundle: nil).instantiateInitialViewController() {
-                present(secondviewController, animated: true, completion: nil)
-            }
         }
     }
 }
