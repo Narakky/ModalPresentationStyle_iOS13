@@ -14,11 +14,13 @@ class ViewController: UIViewController {
 
     private enum TableData: CaseIterable {
         case common
+        case hasNavigation
         case hasGesture
 
         var title: String {
             switch self {
             case .common: return "普通"
+            case .hasNavigation: return "ナビゲーション有り"
             case .hasGesture: return "ジェスチャ有り"
             }
         }
@@ -26,6 +28,7 @@ class ViewController: UIViewController {
         var detail: String {
             switch self {
             case .common: return "何の変哲もない普通の画面に遷移します"
+            case .hasNavigation: return "ナビゲーションバーが存在する画面に遷移します"
             case .hasGesture: return "ジェスチャが存在する画面に遷移します"
             }
         }
@@ -54,7 +57,6 @@ class ViewController: UIViewController {
             tableView.deselectRow(at: selectedIndexPath, animated: false)
         }
     }
-
 }
 
 // MARK: - UITableViewDataSource
@@ -86,7 +88,11 @@ extension ViewController: UITableViewDelegate {
         switch data {
         case .common:
             if let secondViewController = UIStoryboard(name: "CommonSecondViewController", bundle: nil).instantiateInitialViewController() {
-                navigationController?.pushViewController(secondViewController, animated: true)
+                present(secondViewController, animated: true, completion: nil)
+            }
+        case .hasNavigation:
+            if let secondViewController = UIStoryboard(name: "HasNavigationSecondViewController", bundle: nil).instantiateInitialViewController() {
+                present(secondViewController, animated: true, completion: nil)
             }
         default:
             break
