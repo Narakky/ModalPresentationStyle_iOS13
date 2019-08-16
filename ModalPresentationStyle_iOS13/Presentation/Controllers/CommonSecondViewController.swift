@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CommonSecondViewController.swift
 //  ModalPresentationStyle_iOS13
 //
 //  Created by Naraki on 8/8/19.
@@ -8,13 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class CommonSecondViewController: DefaultPresentedViewController {
+
+    // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
-

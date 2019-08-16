@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14854.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yUX-UT-lNh">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14806.4"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Has Slider Second View Controller-->
+        <scene sceneID="MDb-cI-x6x">
+            <objects>
+                <viewController id="yUX-UT-lNh" customClass="HasSliderSecondViewController" customModule="ModalPresentationStyle_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="isr-86-bUs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9DE-7h-JdA">
+                                <rect key="frame" x="20" y="104" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="X8e-uX-nEx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PresentationStyle: Auto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRb-MK-9aC">
+                                <rect key="frame" x="20" y="164" width="374" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gesture: No Gesture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpr-qQ-q6l">
+                                <rect key="frame" x="20" y="205.5" width="374" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1Kq-Wo-2gw">
+                                <rect key="frame" x="30" y="257" width="354" height="575"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="p76-g5-eo8">
+                                        <rect key="frame" x="-2" y="0.0" width="358" height="288.5"/>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="EDm-Un-Eag">
+                                        <rect key="frame" x="-2" y="287.5" width="358" height="288.5"/>
+                                    </slider>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="LGV-S5-0Zd" firstAttribute="bottom" secondItem="1Kq-Wo-2gw" secondAttribute="bottom" constant="30" id="2lW-sJ-jnj"/>
+                            <constraint firstItem="9DE-7h-JdA" firstAttribute="top" secondItem="LGV-S5-0Zd" secondAttribute="top" constant="60" id="5C0-XO-I7w"/>
+                            <constraint firstItem="1Kq-Wo-2gw" firstAttribute="leading" secondItem="LGV-S5-0Zd" secondAttribute="leading" constant="30" id="EKn-se-89J"/>
+                            <constraint firstItem="LGV-S5-0Zd" firstAttribute="trailing" secondItem="1Kq-Wo-2gw" secondAttribute="trailing" constant="30" id="F78-9n-PyF"/>
+                            <constraint firstItem="qpr-qQ-q6l" firstAttribute="top" secondItem="WRb-MK-9aC" secondAttribute="bottom" constant="20" id="Fuh-QD-EdU"/>
+                            <constraint firstItem="LGV-S5-0Zd" firstAttribute="trailing" secondItem="qpr-qQ-q6l" secondAttribute="trailing" constant="20" id="JWV-7f-P6I"/>
+                            <constraint firstItem="WRb-MK-9aC" firstAttribute="top" secondItem="9DE-7h-JdA" secondAttribute="bottom" constant="30" id="P2L-6E-kq7"/>
+                            <constraint firstItem="qpr-qQ-q6l" firstAttribute="leading" secondItem="LGV-S5-0Zd" secondAttribute="leading" constant="20" id="ToL-6C-Yka"/>
+                            <constraint firstItem="LGV-S5-0Zd" firstAttribute="trailing" secondItem="WRb-MK-9aC" secondAttribute="trailing" constant="20" id="U5v-ZX-FZc"/>
+                            <constraint firstItem="1Kq-Wo-2gw" firstAttribute="top" secondItem="qpr-qQ-q6l" secondAttribute="bottom" constant="30" id="b0T-zN-ajc"/>
+                            <constraint firstItem="9DE-7h-JdA" firstAttribute="leading" secondItem="LGV-S5-0Zd" secondAttribute="leading" constant="20" id="neb-Tj-KIG"/>
+                            <constraint firstItem="LGV-S5-0Zd" firstAttribute="trailing" secondItem="9DE-7h-JdA" secondAttribute="trailing" constant="20" id="psa-Y0-uOz"/>
+                            <constraint firstItem="WRb-MK-9aC" firstAttribute="leading" secondItem="LGV-S5-0Zd" secondAttribute="leading" constant="20" id="x6b-Hj-uda"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LGV-S5-0Zd"/>
+                    </view>
+                    <connections>
+                        <outlet property="horizontalSlider" destination="p76-g5-eo8" id="28a-dK-eT5"/>
+                        <outlet property="verticalSlider" destination="EDm-Un-Eag" id="9R4-Se-C4O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0k2-FS-6FA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="120.53571428571428"/>
+        </scene>
+    </scenes>
+</document>

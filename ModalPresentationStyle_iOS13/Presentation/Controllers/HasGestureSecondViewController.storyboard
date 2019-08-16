@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14854.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Bf-9V-Os2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14806.4"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Has Gesture Second View Controller-->
+        <scene sceneID="C1X-zA-PxX">
+            <objects>
+                <viewController id="4Bf-9V-Os2" customClass="HasGestureSecondViewController" customModule="ModalPresentationStyle_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Tg-Of-VXT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wp9-a8-pNi">
+                                <rect key="frame" x="20" y="104" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PresentationStyle: Auto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNo-Gf-hd8">
+                                <rect key="frame" x="20" y="163" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gesture: Has Gesture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDn-WF-y7x">
+                                <rect key="frame" x="20" y="204" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="finger_swipe_action" translatesAutoresizingMaskIntoConstraints="NO" id="zYZ-Sq-e9S">
+                                <rect key="frame" x="82" y="285" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="6UX-hl-Yj0"/>
+                                    <constraint firstAttribute="width" constant="250" id="P1o-Hi-EFi"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="zYZ-Sq-e9S" firstAttribute="top" secondItem="HDn-WF-y7x" secondAttribute="bottom" constant="60" id="6jP-lu-XZd"/>
+                            <constraint firstItem="d9A-JT-9Km" firstAttribute="trailing" secondItem="zNo-Gf-hd8" secondAttribute="trailing" constant="20" id="GSh-l2-e6Y"/>
+                            <constraint firstItem="zNo-Gf-hd8" firstAttribute="top" secondItem="Wp9-a8-pNi" secondAttribute="bottom" constant="30" id="IDl-EO-q7d"/>
+                            <constraint firstItem="Wp9-a8-pNi" firstAttribute="leading" secondItem="d9A-JT-9Km" secondAttribute="leading" constant="20" id="V3e-mY-oc0"/>
+                            <constraint firstItem="Wp9-a8-pNi" firstAttribute="top" secondItem="d9A-JT-9Km" secondAttribute="top" constant="60" id="b0F-67-Vhr"/>
+                            <constraint firstItem="zYZ-Sq-e9S" firstAttribute="centerX" secondItem="1Tg-Of-VXT" secondAttribute="centerX" id="e5G-2U-B7z"/>
+                            <constraint firstItem="HDn-WF-y7x" firstAttribute="leading" secondItem="d9A-JT-9Km" secondAttribute="leading" constant="20" id="ji2-Qn-bdw"/>
+                            <constraint firstItem="d9A-JT-9Km" firstAttribute="trailing" secondItem="Wp9-a8-pNi" secondAttribute="trailing" constant="20" id="lgf-hh-sDC"/>
+                            <constraint firstItem="d9A-JT-9Km" firstAttribute="trailing" secondItem="HDn-WF-y7x" secondAttribute="trailing" constant="20" id="q3y-Fz-fcT"/>
+                            <constraint firstItem="HDn-WF-y7x" firstAttribute="top" secondItem="zNo-Gf-hd8" secondAttribute="bottom" constant="20" id="vQw-st-qge"/>
+                            <constraint firstItem="zNo-Gf-hd8" firstAttribute="leading" secondItem="d9A-JT-9Km" secondAttribute="leading" constant="20" id="vsi-te-yXs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d9A-JT-9Km"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="jut-g2-DsV" appends="YES" id="reQ-HI-7OY"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="fingerImageView" destination="zYZ-Sq-e9S" id="gfI-zc-9nf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MpE-AN-j6L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="jut-g2-DsV">
+                    <connections>
+                        <action selector="panGesture:" destination="4Bf-9V-Os2" id="ApC-wb-Lkc"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="124.6376811594203" y="61.607142857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="finger_swipe_action" width="256" height="256"/>
+    </resources>
+</document>
