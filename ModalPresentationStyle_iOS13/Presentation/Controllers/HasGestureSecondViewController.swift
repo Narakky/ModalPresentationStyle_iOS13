@@ -69,17 +69,26 @@ final class HasGestureSecondViewController: DefaultPresentedViewController {
     // MARK: - Private
 
     private func animateOriginalFrame() {
-        view.frame = CGRect(x: view.frame.origin.x,
-        y: 0,
-        width: view.frame.width,
-        height: view.frame.height)
+        UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseOut, animations: { [weak self] in
+            guard let `self` = self else { return }
+            self.view.frame = CGRect(x: self.view.frame.origin.x,
+            y: 0,
+            width: self.view.frame.width,
+            height: self.view.frame.height)
+        }, completion: nil)
+
     }
 
     private func animateDismissViewController() {
-        view.frame = CGRect(x: view.frame.origin.x,
-                            y: view.frame.height,
-                            width: view.frame.width,
-                            height: view.frame.height)
-        dismiss(animated: false, completion: nil)
+        UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseOut, animations: { [weak self] in
+            guard let `self` = self else { return }
+            self.view.frame = CGRect(x: self.view.frame.origin.x,
+            y: self.view.frame.height,
+            width: self.view.frame.width,
+            height: self.view.frame.height)
+            }, completion: { [weak self] _ in
+                guard let `self` = self else { return }
+                self.dismiss(animated: false, completion: nil)
+        })
     }
 }

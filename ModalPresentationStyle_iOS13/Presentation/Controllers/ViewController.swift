@@ -47,7 +47,7 @@ class ViewController: UIViewController {
             case .hasGesture: return UIStoryboard(name: "HasGestureSecondViewController", bundle: nil).instantiateInitialViewController()
             case .hasGestureFullscreen:
                 let viewController = UIStoryboard(name: "HasGestureSecondViewController", bundle: nil).instantiateInitialViewController()
-                viewController?.modalPresentationStyle = .fullScreen
+                viewController?.modalPresentationStyle = .overFullScreen
                 return viewController
             }
         }
