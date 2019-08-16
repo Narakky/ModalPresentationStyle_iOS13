@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         case hasNavigation
         case hasSlider
         case hasGesture
+        case hasGestureFullscreen
 
         var title: String {
             switch self {
@@ -24,6 +25,7 @@ class ViewController: UIViewController {
             case .hasNavigation: return "ナビゲーション有り"
             case .hasSlider: return "スライダー有り"
             case .hasGesture: return "ジェスチャ有り"
+            case .hasGestureFullscreen: return "ジェスチャ有り（フルスクリーン）"
             }
         }
 
@@ -33,6 +35,7 @@ class ViewController: UIViewController {
             case .hasNavigation: return "ナビゲーションバーが存在する画面に遷移します"
             case .hasSlider: return "スライダーバーが存在する画面に遷移します"
             case .hasGesture: return "ジェスチャが存在する画面に遷移します"
+            case .hasGestureFullscreen: return "ジェスチャが存在する画面に遷移します（フルスクリーン表示）"
             }
         }
 
@@ -41,7 +44,11 @@ class ViewController: UIViewController {
             case .common: return UIStoryboard(name: "CommonSecondViewController", bundle: nil).instantiateInitialViewController()
             case .hasNavigation: return UIStoryboard(name: "HasNavigationSecondViewController", bundle: nil).instantiateInitialViewController()
             case .hasSlider: return UIStoryboard(name: "HasSliderSecondViewController", bundle: nil).instantiateInitialViewController()
-            case .hasGesture: return nil
+            case .hasGesture: return UIStoryboard(name: "HasGestureSecondViewController", bundle: nil).instantiateInitialViewController()
+            case .hasGestureFullscreen:
+                let viewController = UIStoryboard(name: "HasGestureSecondViewController", bundle: nil).instantiateInitialViewController()
+                viewController?.modalPresentationStyle = .fullScreen
+                return viewController
             }
         }
     }
@@ -97,21 +104,8 @@ extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let data = TableData.allCases[indexPath.row]
 
-        switch data {
-        case .common:
-            if let secondViewController = data.viewController {
-                present(secondViewController, animated: true, completion: nil)
-            }
-        case .hasNavigation:
-            if let secondViewController = data.viewController {
-                present(secondViewController, animated: true, completion: nil)
-            }
-        case .hasSlider:
-            if let secondviewController = data.viewController {
-                present(secondviewController, animated: true, completion: nil)
-            }
-        case .hasGesture:
-            break
+        if let secondViewController = data.viewController {
+            present(secondViewController, animated: true, completion: nil)
         }
     }
 }

@@ -18,6 +18,8 @@
 		046B69B522FBBA7F004D1231 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046B69B322FBBA7F004D1231 /* Main.storyboard */; };
 		046B69B722FBBA81004D1231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046B69B622FBBA81004D1231 /* Assets.xcassets */; };
 		046B69BA22FBBA81004D1231 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046B69B822FBBA81004D1231 /* LaunchScreen.storyboard */; };
+		04E1015823067AA5005A9D98 /* HasGestureSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1015723067AA5005A9D98 /* HasGestureSecondViewController.swift */; };
+		04E1015A23067BBE005A9D98 /* HasGestureSecondViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E1015923067BBE005A9D98 /* HasGestureSecondViewController.storyboard */; };
 		04EC64D522FBCACB004ED071 /* CommonSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC64D422FBCACB004ED071 /* CommonSecondViewController.swift */; };
 		04EC64D722FBCAF3004ED071 /* CommonSecondViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EC64D622FBCAF3004ED071 /* CommonSecondViewController.storyboard */; };
 /* End PBXBuildFile section */
@@ -36,6 +38,8 @@
 		046B69B622FBBA81004D1231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		046B69B922FBBA81004D1231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		046B69BB22FBBA81004D1231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04E1015723067AA5005A9D98 /* HasGestureSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasGestureSecondViewController.swift; sourceTree = "<group>"; };
+		04E1015923067BBE005A9D98 /* HasGestureSecondViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HasGestureSecondViewController.storyboard; sourceTree = "<group>"; };
 		04EC64D422FBCACB004ED071 /* CommonSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSecondViewController.swift; sourceTree = "<group>"; };
 		04EC64D622FBCAF3004ED071 /* CommonSecondViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CommonSecondViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +102,8 @@
 				0408C56E2305294C009AFD84 /* HasNavigationSecondViewController.swift */,
 				0408C57623053024009AFD84 /* HasSliderSecondViewController.storyboard */,
 				0408C57423053009009AFD84 /* HasSliderSecondViewController.swift */,
+				04E1015923067BBE005A9D98 /* HasGestureSecondViewController.storyboard */,
+				04E1015723067AA5005A9D98 /* HasGestureSecondViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -179,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0408C57723053024009AFD84 /* HasSliderSecondViewController.storyboard in Resources */,
+				04E1015A23067BBE005A9D98 /* HasGestureSecondViewController.storyboard in Resources */,
 				04EC64D722FBCAF3004ED071 /* CommonSecondViewController.storyboard in Resources */,
 				046B69BA22FBBA81004D1231 /* LaunchScreen.storyboard in Resources */,
 				046B69B722FBBA81004D1231 /* Assets.xcassets in Resources */,
@@ -199,6 +206,7 @@
 				0408C56F2305294C009AFD84 /* HasNavigationSecondViewController.swift in Sources */,
 				046B69AE22FBBA7F004D1231 /* AppDelegate.swift in Sources */,
 				0408C57323052E70009AFD84 /* DefaultPresentedViewController.swift in Sources */,
+				04E1015823067AA5005A9D98 /* HasGestureSecondViewController.swift in Sources */,
 				04EC64D522FBCACB004ED071 /* CommonSecondViewController.swift in Sources */,
 				046B69B022FBBA7F004D1231 /* SceneDelegate.swift in Sources */,
 			);
